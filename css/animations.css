@@ -1,0 +1,101 @@
+/* Animations CSS File */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+.hero h1 {
+  animation: fadeIn 1s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.hero p {
+  animation: fadeIn 1s ease 0.4s forwards;
+  opacity: 0;
+}
+
+.cta-button {
+  animation: fadeIn 1s ease 0.6s forwards, pulse 2s infinite 1.6s;
+  opacity: 0;
+}
+
+.question.active {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.question.inactive {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+/* Pizza loading animation */
+.pizza-icon {
+  animation: rotate 3s infinite linear;
+}
