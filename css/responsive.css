@@ -125,9 +125,7 @@
     padding: var(--spacing-unit);
   }
   
-  .logo {
-    margin-bottom: var(--spacing-unit);
-  }
+
   
   .nav-links {
     width: 100%;

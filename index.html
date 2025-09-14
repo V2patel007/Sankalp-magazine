@@ -103,6 +103,11 @@
         .logo img {
           height: 50px;
         }
+        @media (max-width: 600px) {
+          .logo img {
+            height: 40px;
+          }
+        }
 
         /* Terms Page Specific Styles */
         .terms-page {
@@ -113,7 +118,6 @@
 
         .terms-header {
           text-align: center;
-          padding: calc(var(--spacing-unit) * 6) 0;
           color: var(--white-color);
         }
 
@@ -351,7 +355,7 @@
           }
           
           .terms-logo {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
           }
           
           .terms-title {
@@ -397,61 +401,131 @@
 
     <!-- Terms Page -->
     <div class="terms-page">
-        <div class="container">
-            <header class="terms-header" style="padding-top: 0px;">
-                <div class="terms-logo"> The 5 Authentic American Crust</div>
-                <!-- <div class="terms-subtitle" style="font-size: 50px;">FREE Pizza for a Year Contest</div> -->
-            </header>
+      <div class="container">
+      <header class="terms-header" style="padding-top: 0px;">
+        <div class="terms-logo"> The 5 Authentic American Crust</div>
+        <!-- <div class="terms-subtitle" style="font-size: 50px;">FREE Pizza for a Year Contest</div> -->
+      </header>
 
-            <div class="terms-card">
-                <div class="terms-card-header">
-                    <h1 class="terms-title">FREE PIZZA FOR A YEAR CONTEST</h1>
-                    <div class="offer-badge" style="font-size:2rem; padding:16px 32px;">Terms & Conditions</div>
-                </div>
-                
-                <div class="terms-content">
-                    <ol class="terms-list">
-                        <li class="term-item">
-                            <p>Make a bill of minimum <span class="highlight">Rs. 999</span> (<span class="highlight">Dine-In only</span>)</p>
-                        </li>
-                        
-                        <li class="term-item">
-                            <p>Take a selfie with your squad and post it on <span class="highlight">Instagram Story</span></p>
-                        </li>
-                        
-                        <li class="term-item">
-                            <p>Tag <a href="https://instagram.com/pizzawalas.india" class="instagram-handle">@pizzawalas.india</a> and use hashtag <span class="hashtag">#MyPizzawalasMoment</span></p>
-                        </li>
-                        
-                        <li class="term-item">
-                            <p>Send a screenshot of the story to Pizzawala's Instagram Handle <a href="https://instagram.com/pizzawalas.india" class="instagram-handle">@pizzawalas.india</a></p>
-                        </li>
-                        
-                        <li class="term-item">
-                            <p><span class="prize-highlight">Top 3 stories will get a chance to win FREE Pizza for a year!</span></p>
-                        </li>
-                        
-                        <li class="term-item">
-                            <p>In the <span class="highlight">FREE Pizza for a year</span> offer, the winner will get FREE Pizza <span class="highlight">once a month for one year</span></p>
-                        </li>
-                        
-                        <li class="term-item">
-                            <p>FREE Pizza includes <span class="highlight">Any Regular Size American Hand-tossed Pizza</span></p>
-                        </li>
-                        
-                        <li class="term-item">
-                            <p>This offer will be <span class="highlight">valid at all Pizzawala's outlets</span></p>
-                        </li>
-                    </ol>
-
-                    <div style="text-align: center; margin-top: calc(var(--spacing-unit) * 4);">
-                        <button class="cta-button">Ready to Win? Visit Us Now!</button>
-                    </div>
-                </div>
-            </div>
+      <div class="terms-card">
+        <div class="terms-card-header">
+        <h1 class="terms-title">FREE PIZZA FOR A YEAR CONTEST</h1>
+        <div class="offer-badge" style="font-size:2rem; padding:16px 32px;">Terms & Conditions</div>
         </div>
-        <br><br><br>
+        
+        <div class="terms-content">
+        <ol class="terms-list">
+          <li class="term-item">
+          <p>Make a bill of minimum <span class="highlight">Rs. 999</span> (<span class="highlight">Dine-In only</span>)</p>
+          </li>
+          
+          <li class="term-item">
+          <p>Take a selfie with your squad and post it on <span class="highlight">Instagram Story</span></p>
+          </li>
+          
+          <li class="term-item">
+          <p>Tag <a href="https://instagram.com/pizzawalas.india" class="instagram-handle">@pizzawalas.india</a> and use hashtag <span class="hashtag">#MyPizzawalasMoment</span></p>
+          </li>
+          
+          <li class="term-item">
+          <p>Send a screenshot of the story to Pizzawala's Instagram Handle <a href="https://instagram.com/pizzawalas.india" class="instagram-handle">@pizzawalas.india</a></p>
+          </li>
+          
+          <li class="term-item">
+          <p><span class="prize-highlight">Top 3 stories will get a chance to win FREE Pizza for a year!</span></p>
+          </li>
+          
+          <li class="term-item">
+          <p>In the <span class="highlight">FREE Pizza for a year</span> offer, the winner will get FREE Pizza <span class="highlight">once a month for one year</span></p>
+          </li>
+          
+          <li class="term-item">
+          <p>FREE Pizza includes <span class="highlight">Any Regular Size American Hand-tossed Pizza</span></p>
+          </li>
+          
+          <li class="term-item">
+          <p>This offer will be <span class="highlight">valid at all Pizzawala's outlets</span></p>
+          </li>
+        </ol>
+
+        <div style="text-align: center; margin-top: calc(var(--spacing-unit) * 1);">
+          <button class="cta-button" style="font-size:1rem; padding:10px 20px;">Ready to Win? Visit Us Now!</button>
+        <br><br>
+        </div>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
     </div>
+    <style>
+    /* Responsive adjustments for Terms Page */
+    @media (max-width: 1024px) {
+      .terms-card {
+      max-width: 95vw;
+      }
+      .terms-content {
+      padding: 32px;
+      }
+    }
+    @media (max-width: 768px) {
+      .terms-logo {
+      font-size: 1.5rem !important;
+      }
+      .terms-title {
+      font-size: 1.3rem !important;
+      }
+      .terms-card-header {
+      padding: 24px !important;
+      }
+      .terms-content {
+      padding: 16px !important;
+      }
+      .term-item {
+      padding: 16px !important;
+      font-size: 1rem !important;
+      }
+      .offer-badge {
+      font-size: 1.1rem !important;
+      padding: 10px 20px !important;
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+      padding: 0 8px !important;
+      }
+      .terms-card {
+      margin: 8px !important;
+      border-radius: 4px !important;
+      }
+      .terms-logo {
+      font-size: 1.1rem !important;
+      }
+      .terms-title {
+      font-size: 1rem !important;
+      }
+      .terms-card-header {
+      padding: 12px !important;
+      }
+      .terms-content {
+      padding: 8px !important;
+      }
+      .term-item {
+      padding: 10px !important;
+      font-size: 0.95rem !important;
+      margin-bottom: 12px !important;
+      }
+      .offer-badge {
+      font-size: 1rem !important;
+      padding: 8px 12px !important;
+      }
+      .prize-highlight {
+      font-size: 1rem !important;
+      }
+      .term-item p {
+      padding-left: 10px !important;
+      }
+    }
+    </style>
 
     <!-- Footer -->
   <footer class="footer">
